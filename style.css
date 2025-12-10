@@ -10,13 +10,32 @@
     padding: 20px;
 }
 
-/* Game Board */
+/* Game Board with Border Animation */
 #gameBoard {
     border: 4px solid #00ff88;
     border-radius: 12px;
     background: #0d0d16;
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
     margin-bottom: 20px;
+    
+    /* Animation */
+    animation: borderPulse 2s infinite alternate;
+}
+
+/* Border Pulse Animation */
+@keyframes borderPulse {
+    0% {
+        border-color: #00ff88;
+        box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+    }
+    50% {
+        border-color: #00ccff;
+        box-shadow: 0 0 35px rgba(0, 204, 255, 0.6);
+    }
+    100% {
+        border-color: #ff00ff;
+        box-shadow: 0 0 50px rgba(255, 0, 255, 0.8);
+    }
 }
 
 /* Score Text */
