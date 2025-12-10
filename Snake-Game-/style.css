@@ -1,0 +1,52 @@
+/* Game Container */
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Game Board */
+#gameBoard {
+    border: 4px solid #00ff88;
+    border-radius: 12px;
+    background: #0d0d16;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+    margin-bottom: 20px;
+}
+
+/* Score Text */
+#scoreText {
+    font-family: "Permanent Marker", cursive;
+    font-size: 80px;
+    color: #00ffcc;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    margin: 15px 0;
+}
+
+/* Reset Button */
+#resetBtn {
+    font-family: "Permanent Marker", cursive;
+    font-size: 22px;
+    padding: 12px 24px;
+    width: auto;
+    border: 2px solid #00ffcc;
+    border-radius: 12px;
+    background: transparent;
+    color: #00ffcc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+}
+
+/* Hover Effects */
+#resetBtn:hover {
+    background: #00ffcc;
+    color: #1e1e2f;
+    box-shadow: 0 0 18px rgba(0, 255, 204, 0.6);
+    transform: scale(1.05);
+}
